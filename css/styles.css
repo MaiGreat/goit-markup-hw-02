@@ -6,6 +6,9 @@ body {
     letter-spacing: 0.02em;
 
 }
+.list {
+    list-style: none;
+}
 
 .logo {
 
@@ -15,21 +18,23 @@ body {
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-        color: #2E2F42;
-}
-
-.site-nav .link {
-
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
     color: #2E2F42;
 }
 
-.auth-nav {
+.site-nav .link {
+    color: #2E2F42;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+}
 
+.site-nav .link:hover, site-nav .link:focus {
+    color: #4D5AE5;
+} 
+
+.auth-nav a {
+    color: #434455;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: #434455;
 }
