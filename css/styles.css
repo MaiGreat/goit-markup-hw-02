@@ -1,7 +1,16 @@
+:root {
+    --hero-text: #FFFFFF;
+    --main-text-color: #2E2F42;
+    --text-color: #434455;
+    --accent-color: #4D5AE5;
+    --logo-past-text: #F4F4FD;
+    --footer-text: #E7E9FC;
 
+}
+;
 body {
-    background-color:#fff;
-    color: #2E2F42;
+    background-color: var(--hero-text);
+    color: var(--main-text-color);
     font-family: Roboto, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 0.02em;
 
@@ -11,30 +20,105 @@ body {
 }
 
 .logo {
-
     font-family: Raleway; sans-serif
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2E2F42;
+    color: var(--main-text-color)
 }
+.logo-span {color: var(--accent-color)}
+
+ /* site-nav */
 
 .site-nav .link {
-    color: #2E2F42;
+    color: var(--main-text-color);
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
 }
 
-.site-nav .link:hover, site-nav .link:focus {
-    color: #4D5AE5;
+.site-nav .link:active {
+    color: var(--text-color);
+}
+
+.site-nav .link:hover, .site-nav .link:focus {
+    color: var(--accent-color);
 } 
 
-.auth-nav a {
-    color: #434455;
+/*auth-nav */
+
+.auth-nav .link {
+    color: var(--text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+}
+
+.auth-nav .link:active, .auth-nav .link:hover, .auth-nav .link:focus {
+    color: var(--accent-color);
+}
+
+/*HERO*/
+
+.hero .hero-titel {
+
+    background: var(--main-text-color);
+
+    color: var(--hero-text)
+}
+.hero .button-hero {
+    color: #FFFFFF;
+    background: var(--accent-color);
+}
+
+/*main-page*/
+.section .section-title {
+font-weight: 600;
+font-size: 36px;
+line-height: 1.11;
+}
+
+.features .subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.features .text {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.5;
+}
+/*button*/
+.nav-button {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    background: var(--logo-past-text)
+}
+
+.nav-button:hover,
+.nav-button:focus,
+.nav-button:active {
+    color: var(--hero-text);
+    background: var(--accent-color);
+}
+
+.nav-button {
+    cursor: pointer;
+}
+
+.footer {
+    background: var(--main-text-color);
+}
+
+.logo-past {color: var(--logo-past-text)}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--footer-text)
 }
