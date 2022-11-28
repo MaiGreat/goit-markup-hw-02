@@ -114,6 +114,10 @@ line-height: 1.11;
     background: var(--accent-color);
 }
 
+.nav-button {
+    cursor: pointer;
+}
+
 .footer {
     background: var(--main-text-color);
 }
