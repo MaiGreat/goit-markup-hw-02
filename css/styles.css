@@ -73,6 +73,13 @@ body {
     background: var(--accent-color);
 }
 
+.hero .button-hero:active, 
+.hero .button-hero:hover, 
+.hero .button-hero:focus {
+    background: #404BBF;
+    cursor: pointer;
+}
+
 /*main-page*/
 .section .section-title {
 font-weight: 600;
@@ -106,7 +113,6 @@ line-height: 1.11;
     color: var(--hero-text);
     background: var(--accent-color);
 }
-
 
 .footer {
     background: var(--main-text-color);
