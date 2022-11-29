@@ -7,7 +7,7 @@
     --footer-text: #E7E9FC;
 
 }
-;
+
 body {
     background-color: var(--hero-text);
     color: var(--main-text-color);
@@ -20,13 +20,14 @@ body {
 }
 
 .logo {
-    font-family: Raleway; sans-serif
+    font-family: Raleway, sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--main-text-color)
+    color: var(--main-text-color);
+    text-decoration: none;
 }
 .logo-span {color: var(--accent-color)}
 
@@ -34,9 +35,11 @@ body {
 
 .site-nav .link {
     color: var(--main-text-color);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    text-decoration: none;
+    letter-spacing: 0.04em;
 }
 
 .site-nav .link:active {
@@ -49,11 +52,12 @@ body {
 
 /*auth-nav */
 
-.auth-nav .link {
+.nav .link {
     color: var(--text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    text-decoration: none;
 }
 
 .auth-nav .link:active, .auth-nav .link:hover, .auth-nav .link:focus {
@@ -61,16 +65,24 @@ body {
 }
 
 /*HERO*/
+.hero {
+    background: var(--main-text-color);
+}
 
 .hero .hero-titel {
 
-    background: var(--main-text-color);
-
-    color: var(--hero-text)
+    color: var(--hero-text);
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 1.07;
 }
 .hero .button-hero {
     color: var(--hero-text);
     background: var(--accent-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    font-family: inherit;
 }
 
 .hero .button-hero:active, 
@@ -80,15 +92,32 @@ body {
     cursor: pointer;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 /*main-page*/
+.team {
+    background: var(--logo-past-text);
+}
+
 .section .section-title {
-font-weight: 600;
+font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
 }
 
 .features .subtitle {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
 }
@@ -101,9 +130,10 @@ line-height: 1.11;
 /*button*/
 .nav-button {
     color: var(--accent-color);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    font-family: inherit;
     background: var(--logo-past-text)
 }
 
